@@ -20,7 +20,7 @@ def convert_h5_tiff(h5_file_path, inference_key, output_directory, select_channe
 if __name__ == "__main__":
     
     # List of mask image files
-    root_dir = Path("/home/nickb/data/CT/VW_Steel_Kalibration_Zylinder/")
+    root_dir = Path("/home/nickb/data/CT/xct_pores_dataset/B7021_inference/model_inputs")
     
     candidate_files = [root_dir / path for path in os.listdir(root_dir)]
     inference_h5_files = [fp for fp in candidate_files if fp.suffix in SUFFIXES]
